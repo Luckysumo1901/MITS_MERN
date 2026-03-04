@@ -1,15 +1,17 @@
-import React from "react";
+import { Component } from "react"
 
-const Services =()=> {
+
+class Services extends Component{
+    render(){
         return(
-            <>
-                <div>
-                        <h1>Services</h1>
-                        <p>Class Component</p>
-                </div>      
-                <p>Fragment Tag</p>      
+            <>{/*Fregment Tag<></>*/}
+            <div>
+                <h1>Services</h1>
+                <p>Class Component</p>
+            </div>
+            <p>Fregment tag</p>
             </>
         )
+    }
 }
-
 export default Services
