@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Child = ({name,age,isActive,food,contact}) => {
+const Child = ({name,age,isActive,food,contact,sendMessage}) => {
   return (
     <div>
+      
       <h1>Name: {name} </h1>
       <h2>Age: {age}</h2>
       <h3>Active Status: {isActive ? "Active" : "Not Active"}</h3>
@@ -13,13 +14,15 @@ const Child = ({name,age,isActive,food,contact}) => {
         {food.map((value,index)=>(
           <li key={index}>
             {value}
-          </li>))}
+          </li>
+        ))}
       </ul>
       <br/>
       <hr/>
       <h1>Contact Details</h1>
       <p>Mobile No : {contact.mobile}</p>
       <p>Email ID : {contact.email}</p>
+      <button onClick={()=>{sendMessage("Send message from child")}}>send message</button>
       <br/>
       <hr/>
     </div>
