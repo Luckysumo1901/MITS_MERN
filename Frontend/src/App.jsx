@@ -15,6 +15,9 @@ import Login from "../auth/Login";
 import Signup from "../auth/Signup";
 import Ref from "../hooks/Ref";
 import Reducer from "../hooks/Reducer";
+import Memo from "../hooks/Memo";
+import CallBack from "../hooks/CallBack";
+import Todo from "./components/ToDo";
 
 const App = () => {
     return (
@@ -25,6 +28,7 @@ const App = () => {
       <Route path="/about" element={<About/>}></Route>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/service" element={<Services/>}/>
+      <Route path="/todo" element={<Todo/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/hooks" element={<Hooks/>}>
@@ -34,6 +38,8 @@ const App = () => {
         <Route path="useEffectApi" element={<EffectWithApi/>}/>
         <Route path="useRef" element={<Ref/>}/>
         <Route path="useReducer" element={<Reducer/>}/>
+        <Route path="useMemo" element={<Memo/>}/>
+        <Route path="useCallBack" element={<CallBack/>}/>
       </Route> 
 
     </Routes>
