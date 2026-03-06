@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Todo = () => {
+const ToDo = () => {
     const[task,setTask]=useState('');
     const[todos,setTodos]=useState([{
         task:'Read',
@@ -65,4 +65,4 @@ const Todo = () => {
   )
 }
 
-export default Todo
+export default ToDo
