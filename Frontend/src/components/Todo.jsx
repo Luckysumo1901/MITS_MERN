@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const ToDo = () => {
     const[task,setTask]=useState('');
     const[todos,setTodos]=useState([{
-        task:'Read',
+        task:'Reading',
         status:false     // if we place true instead of false in console read will strike out  
     }])
     const [edit,setEdit]=useState(null);         
