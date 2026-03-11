@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const ToDo = () => {
+const Todo = () => {
     const[task,setTask]=useState('');
     const[todos,setTodos]=useState([]);
     const [edit,setEdit]=useState(null);  
-    const API=`http://localhost:3000`
+    const API=`https://mits-mern-2g8h.onrender.com`
 
     const fetchTodo=async()=>{
         const res = await axios.get(`${API}/api/todo/`);
@@ -70,4 +70,4 @@ const ToDo = () => {
   )
 }
 
-export default ToDo
+export default Todo
